@@ -14,7 +14,7 @@ window.STORE = {
   instagram: "",            // e.g. "https://instagram.com/yourhandle" (icon is hidden while empty)
 
   // UPI payment (customer pays after placing the order)
-  upiId: "",                // e.g. "9812856568@ybl"  <-- ADD VEENU'S UPI ID HERE
+    upiId: "9812856568@ptsbi",                // e.g. "9812856568@ybl"  <-- ADD VEENU'S UPI ID HERE
   upiName: "Veenu Mehandi",
   // A QR code with the exact order amount is generated automatically from this UPI ID.
 
