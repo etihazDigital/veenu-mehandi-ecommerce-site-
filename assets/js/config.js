@@ -26,6 +26,6 @@ window.STORE = {
   // New-order email. Uses the free FormSubmit service; the first order triggers a
   // one-time confirmation email to the address below, click "Activate" once.
   // Leave empty ("") to turn email off (then orders cannot be placed, so keep it on).
-  orderEndpoint: "", /* paste the Google Apps Script web-app URL here (see backend-free/SETUP.md) */
-  orderEmailEndpoint: "https://formsubmit.co/ajax/veenumehandiproducts@gmail.com"
+    orderEndpoint: "https://script.google.com/macros/s/AKfycbzjowzWGIlPebwuBf-hLDGn01X3zIsmhbwCsvcIleTbT0HTKt8klHYkEHCfZUSyWWQB/exec",
+   orderEmailEndpoint: "https://formsubmit.co/ajax/veenumehandiproducts@gmail.com"
 };
