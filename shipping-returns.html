@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shipping & Returns | Veenu Mehandi</title>
+<meta name="description" content="Delivery all over India at a flat rate per kg, dispatch within 48 hours. Returns accepted only for damaged items with an unboxing video.">
+<meta name="theme-color" content="#c87587">
+<meta property="og:title" content="Shipping & Returns | Veenu Mehandi">
+<meta property="og:description" content="Delivery all over India at a flat rate per kg, dispatch within 48 hours. Returns accepted only for damaged items with an unboxing video.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / Shipping &amp; Returns</nav>
+  <h1>Shipping &amp; Returns</h1>
+</div></section>
+<section class="section"><div class="wrap prose">
+  <h2>Shipping</h2>
+  <ul>
+    <li>We deliver <b>all over India</b>.</li>
+    <li>Shipping is a flat <b data-ship></b> per kg, charged for each started kg of your order's total weight. Prices on the website do not include shipping; it is shown at the cart and checkout.</li>
+    <li>Orders are <b>dispatched within <span data-hours></span> hours</b> of the order being placed.</li>
+    <li>The courier partner depends on your area. Tracking details are sent to your email after dispatch.</li>
+  </ul>
+  <table class="rate-table" id="rate-table"><thead><tr><th>Order weight</th><th>Shipping charge</th></tr></thead><tbody></tbody></table>
+
+  <h2>Payment</h2>
+  <p>We accept payment by <b>UPI</b>. After you enter your delivery details you will see the UPI payment details. After paying, enter your UPI transaction ID at checkout to place the order. Your order confirmation is sent to your email.</p>
+
+  <h2>Returns</h2>
+  <div class="callout">Returns are accepted <b>only if the product arrives damaged</b>.</div>
+  <ul>
+    <li>Please record a <b>continuous unboxing video</b> while opening the parcel. The video is needed as proof of damage.</li>
+    <li>Contact us (see the emergency contact below) with your order number and the video within <span data-return-hours></span> hours of delivery.</li>
+    <li>We will review it and get back to you with a resolution.</li>
+    <li>We cannot accept returns for products that are not damaged, or for damage reported without an unboxing video.</li>
+  </ul>
+  <p>For any emergency: <a href="#" data-wa="Hello! I need urgent help with my order.">WhatsApp</a> &middot; <a data-phone href="#"></a> &middot; <a data-email href="#"></a></p>
+</div></section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var S = window.STORE, tb = document.querySelector("#rate-table tbody"), h = "";
+  for (var k = 1; k <= 5; k++) h += "<tr><td>" + (k === 1 ? "Up to 1 kg" : "Above " + (k - 1) + " kg, up to " + k + " kg") + "</td><td>" + window.VM.money(k * S.shippingPerKg) + "</td></tr>";
+  tb.innerHTML = h;
+});
+</script>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
